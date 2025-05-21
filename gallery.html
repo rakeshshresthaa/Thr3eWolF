@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Thr3eWolF </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Thr3eWolF Logo" class="logo-img">
+            <h1>Thr3eWolF</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="login.html" class="auth-btn">Login</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <header class="gallery-header">
+        <h1>Travel Moments Shared by Our Community</h1>
+        <div class="gallery-controls">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by location or keyword...">
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="upload-btn">
+                <i class="fas fa-upload"></i>
+                <a href="upload.html">Upload Photo</a>
+            </button>
+        </div>
+    </header>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-container">
+        <div class="masonry-grid" id="masonryGrid">
+            <!-- Images will be loaded dynamically via JavaScript -->
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxLocation"></h3>
+                <p id="lightboxDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html> 

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Photo - Thr3eWolF </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Thr3eWolF Logo" class="logo-img">
+            <h1>Thr3eWolF</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="login.html" class="auth-btn">Login</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Upload Form -->
+    <div class="upload-container">
+        <form id="uploadForm" class="upload-form">
+            <h2>Share Your Travel Moment</h2>
+            
+            <!-- Image Upload Area -->
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-prompt">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Drag & Drop your photo here or</p>
+                    <label for="photoInput" class="upload-btn">Choose File</label>
+                    <input type="file" id="photoInput" accept="image/*" hidden>
+                </div>
+                <div class="preview-area" id="previewArea" hidden>
+                    <img id="imagePreview" src="" alt="Preview">
+                    <button type="button" class="remove-btn" id="removeImage">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Location Input -->
+            <div class="form-group">
+                <label for="location">Location</label>
+                <div class="location-input">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="location" placeholder="Where was this photo taken?" required>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Share the story behind this photo..." rows="4" required></textarea>
+            </div>
+
+            <!-- Tags -->
+            <div class="form-group">
+                <label for="tags">Tags (optional)</label>
+                <div class="tags-input">
+                    <input type="text" id="tags" placeholder="Add tags separated by commas">
+                    <div class="tags-container" id="tagsContainer"></div>
+                </div>
+            </div>
+
+            <!-- Privacy Settings -->
+            <div class="form-group">
+                <label>Privacy Settings</label>
+                <div class="privacy-options">
+                    <label class="privacy-option">
+                        <input type="radio" name="privacy" value="public" checked>
+                        <span class="radio-label">
+                            <i class="fas fa-globe"></i>
+                            Public
+                        </span>
+                    </label>
+                    <label class="privacy-option">
+                        <input type="radio" name="privacy" value="private">
+                        <span class="radio-label">
+                            <i class="fas fa-lock"></i>
+                            Private
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i>
+                Share Photo
+            </button>
+
+            <!-- Error Message -->
+            <div class="error-message" id="errorMessage"></div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Thr3eWolF Travel</h3>
+                <p>Discover the beauty of Nepal through our curated travel experiences and community-shared moments.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="upload.html">Share Photos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Thr3eWolF Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/upload.js"></script>
+</body>
+</html> 
