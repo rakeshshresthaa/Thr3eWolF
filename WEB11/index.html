@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thr3eWolF  - Discover the Beauty</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Thr3eWolF Logo" class="logo-img">
+            <h1>Thr3eWolF</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="login.html" class="auth-btn">Login</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Auto-scrolling Images -->
+    <header class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="images/everest.jpg" alt="Himalayan Mountains">
+                <div class="hero-content">
+                    <h1>Discover Nepal</h1>
+                    <p>Experience the magic of the Himalayas</p>
+                    <a href="destinations.html" class="cta-button">Explore Destinations</a>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <img src="images/kumari.jpg" alt="Kathmandu Valley">
+                <div class="hero-content">
+                    <h1>Cultural Heritage</h1>
+                    <p>Explore ancient temples and traditions</p>
+                    <a href="destinations.html" class="cta-button">Discover Culture</a>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <img src="images/pokhara-valley-nepal.jpg" alt="Pokhara Lake">
+                <div class="hero-content">
+                    <h1>Natural Beauty</h1>
+                    <p>Discover serene lakes and landscapes</p>
+                    <a href="destinations.html" class="cta-button">View Nature</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <button class="hero-arrow prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="hero-arrow next"><i class="fas fa-chevron-right"></i></button>
+    </header>
+
+    <!-- Featured Destinations -->
+    <section class="featured-destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-grid">
+            <!-- Destinations will be loaded dynamically -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Discover the beauty of Nepal through our curated travel experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@Thr3eWolFtravel.com</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Thr3eWolF Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/hero-slider.js"></script>
+</body>
+</html> 
